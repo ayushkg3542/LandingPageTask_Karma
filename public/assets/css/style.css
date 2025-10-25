@@ -1,0 +1,935 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgb(101, 66, 34);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.navbar.sticky {
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-family: "Ephesis", cursive;
+    color: #ffffff;
+}
+
+.navbar.sticky .navbar-brand {
+    color: #000000;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-brand #karma {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-brand #fullTitle {
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.17rem;
+}
+
+.navbar.sticky .nav-link {
+    color: #000000;
+}
+.navbar.sticky .nav-link:hover {
+    color: rgb(190, 152, 116);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(190, 152, 116);
+}
+
+.enquiryButton {
+    width: 11.2rem;
+    height: 3.2rem;
+}
+
+.button_inner {
+	height: 100%;
+	width: 100%;
+	background: rgb(190, 152, 116);
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_inner:hover {
+    background: #ffb400;
+    color: rgb(255, 255, 255);
+}
+
+/* BANNER SECTION */
+.banner-section {
+    padding: 60px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/banner.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+
+.banner_title h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner_title .divider {
+    width: 100%;
+    border-top: 0.5px solid rgba(169, 169, 169, 0.808);
+    margin: 15px 0;
+}
+
+.banner_title h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(255, 189, 85);
+}
+
+.banner_cards .badge1,
+.badge2 {
+    padding: 8px 12px;
+    border-radius: 28px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.badge1 {
+    background: RGB(106, 73, 40);
+    background: linear-gradient(
+        1.5708rad,
+        rgb(138, 109, 80) 50%,
+        rgb(96, 77, 47)
+    );
+    color: #fff;
+}
+
+.badge2 {
+    background: RGB(106, 73, 40);
+    background: linear-gradient(
+        1.5708rad,
+        rgb(254, 209, 104) 50%,
+        rgb(254, 180, 50)
+    );
+    color: #000;
+}
+
+.banner_cards .card {
+    border-radius: 1rem;
+}
+
+.banner_cards h5 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.banner_cards h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.banner_cards h2 i {
+    font-size: 24px;
+    color: #ffd04f;
+}
+
+.banner_cards p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.banner_cards .card {
+    backdrop-filter: blur(4px);
+    background-color: rgba(149, 149, 149, 0.4);
+    border: 1px solid #c3c3c3;
+}
+
+.banner_cards .banner_link {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #c4930c5d;
+    padding: 12px 0;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #ffc017;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner_cards .banner_link:hover {
+    background-color: #ffc017;
+    color: #000;
+}
+
+.form-section .card {
+    border-radius: 1rem;
+    margin: 0.5rem 2.5rem;
+    backdrop-filter: blur(4px);
+    background-color: rgba(97, 97, 97, 0.4);
+    border: 1px solid #727272;
+}
+.form-section .card form {
+    padding: 10px;
+}
+
+.form-section .card form .form-label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-section .card form .form-control {
+    border-radius: 0 !important;
+    padding: 0.42rem;
+    border-left: 0;
+}
+
+.form-section .card form .form-control:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.addon-wrapping {
+    border-radius: 0;
+    background: #fff;
+    border-right: 0;
+}
+
+.submit_btn {
+    width: 20%;
+    padding: 12px 0;
+    background: rgb(190, 152, 116);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0;
+}
+
+.submit_btn:hover {
+    background: #fff;
+    color: rgb(149, 93, 40);
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    margin: 60px 0;
+}
+
+.about_image {
+    height: 100%;
+    width: 100%;
+}
+.about_image img {
+    border-radius: 1.4rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about_content .about_title {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    color: rgb(149, 93, 40);
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.about_content h1 {
+    font-family: "Jost", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    margin: 15px 0;
+}
+
+.about_content .para p {
+    color: #5c5c5c;
+}
+
+.about_amenities p {
+    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.amenities_inner i {
+    background-color: #be9874;
+    color: #fff;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4f2b09;
+    font-size: 18px;
+}
+
+.amenities_inner h5 {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    margin: 0;
+}
+
+.about_amenities .button {
+    margin-top: 20px;
+    width: 27%;
+    height: auto;
+}
+
+.enquiry_button {
+    width: 100%;
+    padding: 12px 0;
+    background: rgb(101, 66, 34);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+/* PACKAGE SECTION */
+.package-section {
+    margin: 60px 0;
+    background-color: rgb(248, 246, 242);
+    padding: 60px 0;
+}
+
+.package_title h1 {
+    font-family: "Jost", serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        rgb(77, 51, 25),
+        #be9874
+    ); /* your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.package_title .divider {
+    width: 7rem;
+    border: 3px solid transparent; /* Make the border transparent first */
+    margin: 15px 0;
+    display: inline-block;
+    border-image: linear-gradient(
+            90deg,
+            rgba(255, 204, 102, 0) 0%,
+            rgb(255, 152, 41) 50%,
+            rgba(255, 204, 102, 0) 100%
+        )
+        1;
+    border-radius: 5px;
+}
+
+.package_title h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(140, 117, 77);
+    margin: 0px;
+    width: 50%;
+}
+
+.package_image {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.package_image img {
+    border-radius: 1.4rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package_content .card#main_card {
+    box-shadow: 0 2px 10px rgba(101, 101, 101, 0.21);
+    border-radius: 1.4rem;
+}
+.package_content .card-body {
+    padding: 24px;
+}
+
+.package_content .package_text {
+    border-left: 4px solid rgb(255, 224, 131);
+    padding: 0 0px 0px 10px;
+}
+
+.package_content .package_option {
+    color: rgb(255, 224, 131);
+}
+
+.package_content .package_option h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    color: #654222;
+}
+
+#package_card {
+    margin: 15px 0;
+    background: linear-gradient(90deg, rgb(139, 95, 50), #c9a56d);
+    box-shadow: none;
+    border-radius: 1.4rem;
+}
+
+#package_card .card {
+    box-shadow: none;
+    border-radius: 1.4rem;
+}
+
+.package_card_inner {
+    background: linear-gradient(
+        90deg,
+        hsla(31, 32%, 37%, 1) 0%,
+        hsla(37, 31%, 42%, 1) 100%
+    );
+    border-radius: 1.4rem;
+    border: 1px solid #9c9c9ccd;
+}
+
+.package_card_inner .card-body .badge {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: rgb(254, 223, 130);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.package_card_inner .card-body h5 {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+#package_card .package_card_inner {
+    border: 1px solid #969696b8;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#package_card .package_card_inner:hover {
+    border: 1px solid rgb(254, 223, 130);
+    box-shadow: 0px 2px 5px rgb(254, 209, 104);
+}
+
+.package_price {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.package_price .h2 {
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.package_meal i {
+    color: rgb(254, 223, 130);
+}
+.package_meal p {
+    font-size: 14px;
+}
+
+.package_period {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(243, 230, 208);
+    border-radius: 0.5rem;
+}
+
+.package_period i {
+    color: rgb(153, 130, 94);
+}
+
+.package_period p {
+    font-family: "Inter", sans-serif;
+    color: rgb(109, 75, 46);
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* CRUISE ITINERARY SECTION */
+
+.cruise_title h1 {
+    font-family: "Jost", serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        rgb(77, 51, 25),
+        #be9874
+    ); /* your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+
+.cruise_title h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(140, 117, 77);
+    margin: 0px;
+    width: 50%;
+    word-spacing: 1px;
+}
+
+.cruise_card .card#main_card {
+    border-radius: 1.4rem;
+    box-shadow: 0px 4px 8px #acacac;
+}
+
+.be9874 {
+    color: #be9874;
+}
+.dark-color {
+    color: #50351a;
+}
+
+.night-font-size {
+    font-size: 14px;
+    font-family: "Jost", serif;
+}
+
+.card_inner_1 {
+    padding: 1rem;
+    width: 100%;
+    background-color: rgb(248, 245, 240);
+    /* border: 1px solid #654222; */
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-container .card {
+    flex: 0 0 calc(13.8% - 8px); /* 100% / 8 = 12.5% */
+    background: rgb(246, 246, 246);
+    border-radius: 1rem;
+    border: 1px solid #be9874;
+    border-top: 4px solid #654222;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-container .card:hover {
+    background-color: rgb(255, 241, 228);
+    border: 1px solid #e0a56d;
+    border-top: 4px solid rgb(210, 162, 75);
+}
+
+.card_inner_2 .card {
+    background: rgb(246, 246, 246);
+    border-radius: 1rem;
+    border: 1px solid #be9874;
+    border-top: 4px solid #654222;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_inner_2 .card:hover {
+    background-color: rgb(255, 241, 228);
+    border: 1px solid #e0a56d;
+    border-top: 4px solid rgb(210, 162, 75);
+}
+
+.day_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day_1 span {
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: #4f2b09;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.day_1 p {
+    font-size: 14px;
+    color: #654222;
+    font-weight: 700;
+    font-family: "Jost", serif;
+}
+
+.cruise_card .vertical-line {
+    border-top: 3px solid #be9874;
+    margin: 5px 20px;
+}
+.cruise_card .header-title i {
+    font-size: 1.2rem;
+    color: #be9874;
+}
+.cruise_card .header-title h4 {
+    font-family: "Jost", serif;
+    font-size: 1.2rem;
+    color: #4f2b09;
+    margin-bottom: 0;
+}
+
+.card-header .button {
+    width: 12rem;
+    text-align: center;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    background: rgb(155, 127, 85);
+    box-shadow: 0px 4px 8px #acacac;
+}
+
+.card-header .button a {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Jost", serif;
+    color: #ffffff;
+}
+
+/* Gallery Section */
+.galley-section {
+    padding: 60px 0;
+}
+
+.gallery_title {
+    font-family: "Jost", serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+}
+.galley-section img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 1.4rem;
+    padding: 10px;
+}
+
+/* Attraction Section */
+.attraction-section {
+    padding-bottom: 60px;
+}
+.attraction_title {
+    font-family: "Jost", serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+}
+
+.attraction-section .card {
+    box-shadow: 0px 4px 10px 3px #c2c2c2;
+    border-radius: 1.4rem;
+}
+
+.attraction-section img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-top-right-radius: 1.4rem;
+    border-top-left-radius: 1.4rem;
+}
+
+.attraction-section .card .card-text h5 {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #654222;
+    font-weight: 700;
+}
+
+/* Testimonial Section */
+
+.testimonial-section {
+    padding: 60px 0;
+    background: rgb(245, 245, 245);
+}
+
+.testimonial_title {
+    font-family: "Jost", serif;
+}
+
+.testimonial_title p {
+    color: #654222;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.testimonial_title h1 {
+    font-family: "Jost", serif;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+}
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-header i {
+    font-size: 4rem;
+    display: inherit;
+    color: #d8cfcf;
+    height: 60px;
+}
+
+.client-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #5a3d1a;
+}
+
+.stars i {
+    color: #ffb400;
+    margin-right: 3px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.owl-dots {
+    margin-top: 25px;
+}
+
+.owl-dot span {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.owl-dot.active span {
+    background: #5a3d1a;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-brand {
+    text-align: center;
+    font-family: "Ephesis", cursive;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+}
+
+.footer-brand #karma {
+    font-size: 4rem;
+}
+
+.footer-brand #fullTitle {
+    font-size: 2rem;
+}
+
+.footer h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.footer .nav-link {
+    font-size: 0.8rem;
+    color: #c2c2c2;
+    margin-bottom: 5px;
+}
+
+.footer .text-muted {
+    color: #727272 !important;
+}
+
+.footer .nav-link.desh {
+    border-right: 1px solid #c2c2c2;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    z-index: 1050;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .navbar-toggler {
+        border: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0px 7px #be9874;
+    }
+    .card-container .card {
+        flex: 0 0 calc(16.66% - 15px); /* 6 per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .card-container .card {
+        flex: 0 0 calc(25% - 15px);
+    }
+}
+
+@media (max-width: 990px) {
+    .banner_inner {
+        width: 100%;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .about_amenities .button {
+        width: 35%;
+    }
+.iti {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .submit_btn {
+        width: 100%;
+    }
+    .about_content h1 {
+        font-size: 2.5rem;
+    }
+    .card-container .card {
+        flex: 0 0 calc(33.33% - 15px); /* 3 per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .form-section .card {
+        width: 100%;
+        margin: 0;
+    }
+    .card-container .card {
+        flex: 0 0 calc(50% - 15px); /* 2 per row */
+    }
+    .about_content h1 {
+        font-size: 2rem;
+    }
+        
+}
