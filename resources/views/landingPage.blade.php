@@ -155,7 +155,7 @@
         <div class="row">
             <div class="col-lg-6 mb-sm-4">
                 <div class="about_image">
-                    <img src="{{ asset('assets/img/about.webp') }}" class="img-fluid" alt="">
+                    <img src="{{ url('public/assets/img/about.webp') }}" class="img-fluid" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -234,7 +234,7 @@
         <div class="row my-4">
             <div class="col-lg-6">
                 <div class="package_image">
-                    <img src="{{ asset('assets/img/package.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ url('public/assets/img/package.jpg') }}" class="img-fluid" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -547,22 +547,22 @@
         <h1 class="gallery_title text-center">Our Gallery</h1>
         <div class="row row-gap-3">
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery1.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery1.webp') }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery2.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery2.webp') }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery3.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery3.webp') }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery4.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery4.webp') }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery5.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery5.webp') }}" class="img-fluid" alt="">
             </div>
             <div class="col-md-4">
-                <img src="{{ asset('assets/img/gallery6.webp') }}" class="img-fluid" alt="">
+                <img src="{{ url('public/assets/img/gallery6.webp') }}" class="img-fluid" alt="">
             </div>
         </div>
     </div>
@@ -576,7 +576,7 @@
         <div class="row row-gap-3">
             <div class="col-md-4">
                 <div class="card border-0">
-                    <img src="{{ asset('assets/img/nearBy1.webp') }}" class="card-img-top p-0" alt="">
+                    <img src="{{ url('public/assets/img/nearBy1.webp') }}" class="card-img-top p-0" alt="">
                     <div class="card-body">
                         <div class="card-text p-2 text-center">
                             <h5>Karnak Temple & Open Air Museum</h5>
@@ -586,7 +586,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card border-0">
-                    <img src="{{ asset('assets/img/nearBy2.webp') }}" class="card-img-top p-0" alt="">
+                    <img src="{{ url('public/assets/img/nearBy2.webp') }}" class="card-img-top p-0" alt="">
                     <div class="card-body">
                         <div class="card-text p-2 text-center">
                             <h5>Luxor Temple & Avenue of Sphinxes</h5>
@@ -596,7 +596,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card border-0">
-                    <img src="{{ asset('assets/img/nearBy3.webp') }}" class="card-img-top p-0" alt="">
+                    <img src="{{ url('public/assets/img/nearBy3.webp') }}" class="card-img-top p-0" alt="">
                     <div class="card-body">
                         <div class="card-text p-2 text-center">
                             <h5>Luxor & Mummification Museums</h5>
